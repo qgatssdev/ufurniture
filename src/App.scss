@@ -1,11 +1,12 @@
 .App {
   .App__section1 {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url('./assets/negative-space-blue-art-white-couch.jpeg');
+      url('./assets/negative-space-blue-art-white-couch.jpeg') fixed;
     height: 100vh;
-    width: 100%;
+    // width: 100vw;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
 
     header {
       p {
@@ -190,6 +191,7 @@
         background-image: url('./assets/Rectangle\ 21.png');
         background-repeat: no-repeat;
         background-size: cover;
+        background-position: center center;
         width: 491px;
         height: 305px;
 
@@ -210,6 +212,7 @@
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
 
     p {
       text-align: center;
@@ -255,10 +258,14 @@
   }
 
   footer {
+    margin-left: 10%;
+    margin-right: 10%;
     .footer__gen {
       display: flex;
+      justify-content: space-between;
       .footer__gen__1 {
         flex-basis: 50%;
+        margin-top: 14%;
         .gen__1__links {
           display: flex;
           flex-direction: column;
@@ -272,6 +279,10 @@
         }
 
         .gen__1__mentions {
+          margin-top: 20%;
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
           .mentions__adeniyi {
             display: flex;
             gap: 1%;
@@ -294,6 +305,7 @@
       }
       .footer__address {
         flex-basis: 50%;
+        margin-top: 12%;
         display: flex;
         flex-direction: column;
         gap: 30px;
@@ -303,6 +315,7 @@
           font-weight: 400;
           font-size: 25px;
           line-height: 33px;
+          text-align: right;
         }
 
         .address__actual {
@@ -310,5 +323,11 @@
         }
       }
     }
+  }
+
+  .copyright {
+    margin-top: 10%;
+    text-align: center;
+    padding-bottom: 5%;
   }
 }
