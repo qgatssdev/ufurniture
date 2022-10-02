@@ -121,11 +121,13 @@ function App() {
             <p>design@email.com</p>
             <p>+234 678 489 2994</p>
             <p className="address__actual">
-              elkwood road, off john murtough 1 3456 stripe
+              elkwood road, off john <br />
+              murtough 1 <br />
+              3456 stripe
             </p>
           </div>
         </div>
-        <p>@COPYRIGHT UFURNITURE,2022</p>
+        <p className="copyright">@COPYRIGHT UFURNITURE,2022</p>
       </footer>
     </div>
   );
